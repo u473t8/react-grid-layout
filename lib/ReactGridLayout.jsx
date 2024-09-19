@@ -727,7 +727,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
       e
     };
 
-    if (!this.state.droppingDOMNode) {
+    if (!this.state.droppingDOMNode && Object.keys(finalDroppingItem).length != 0) {
       const positionParams: PositionParams = {
         cols,
         margin,
